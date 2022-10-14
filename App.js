@@ -7,7 +7,7 @@ const pixelRatio = window.devicePixelRatio;
 let monCanvas;
 let mesOutils;
 let x = 0;
-let actif = true; //permet d'activer l'animation ou non 
+let actif = false; //permet d'activer l'animation ou non 
 
 function start() {
   monCanvas = document.getElementById("ecal");
@@ -20,6 +20,10 @@ function start() {
   document.body.style.backgroundColor = 'rgb(17,19,18,100)';
 
   dessine()
+  document.addEventListener("click", function(){
+   actif = true;
+    dessine()
+  });
 
 }
 
