@@ -21,19 +21,23 @@ function start() {
 
   dessine()
   document.addEventListener("click", function(){
-   actif = true;
-    dessine()
+   actif = !actif;
   });
-
+  dessine()
+  
 }
 
 function dessine() {
 
   mesOutils.clearRect(0, 0, monCanvas.width, monCanvas.height);
-  mesOutils.save()
+ // mesOutils.save()
 
   if(actif == true){
     x++;
+  }
+
+  if (x == 450){
+    x = 0;
   }
 
   mesOutils.fillStyle = 'rgb(17,19,18,100)'; 
@@ -173,7 +177,7 @@ function dessine() {
   mesOutils.closePath();
 
   requestAnimationFrame(dessine);
-  mesOutils.restore()
+ // mesOutils.restore()
 }
 
 
