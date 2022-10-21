@@ -42,7 +42,7 @@ function animate() {
   if (isAnimated) {
     angle += 2.5;
     angle2 += 2.5;
-  zoom += 0.1
+  zoom += 0.2
   zoom2 += 0.05
 
 
@@ -82,8 +82,8 @@ function CreerCercle(x0,y0,a,b){
 
 function dessine() {
 
-  let nb = 15;
-  let nb2 = 15;
+  let nb = 25;
+  let nb2 = 25;
   let x = monCanvas.width / 2;
   let y = monCanvas.height / 2;
   
