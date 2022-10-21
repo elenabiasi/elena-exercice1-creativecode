@@ -82,8 +82,8 @@ function CreerCercle(x0,y0,a,b){
 
 function dessine() {
 
-  let nb = 0;
-  let nb2 = 0;
+  let nb = 15;
+  let nb2 = 15;
   let x = monCanvas.width / 2;
   let y = monCanvas.height / 2;
   
