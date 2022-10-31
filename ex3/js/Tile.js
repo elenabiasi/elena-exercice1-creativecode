@@ -37,7 +37,7 @@ class Tile {
     
 
 
-        // cercle
+        // lignes
 
         this.ctx.fillStyle = this.lineColor;
         this.ctx.strokeStyle = this.lineColor;
@@ -64,15 +64,13 @@ class Tile {
 
 
 
-
-
     this.ctx.fillStyle = this.lineColor;
     this.ctx.beginPath();
     // this.ctx.lineTo(this.size / 2, this.size / 2);
     this.ctx.arc(
       this.size/4,
       this.size/4,
-      this.size / 4,
+      this.size / 5,
       0,
       Math.PI * 2,
       false
