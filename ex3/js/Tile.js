@@ -42,6 +42,7 @@ class Tile {
         this.ctx.fillStyle = this.lineColor;
         this.ctx.strokeStyle = this.lineColor;
         this.ctx.lineWidth = 5;
+        this.ctx.lineCap = 'round';
         this.ctx.beginPath();
         this.ctx.moveTo(0, this.size / 2);
         this.ctx.lineTo(0 - this.size / 2, 0);
@@ -53,6 +54,7 @@ class Tile {
         this.ctx.fillStyle = this.lineColor;
         this.ctx.strokeStyle = this.lineColor;
         this.ctx.lineWidth = 5;
+        this.ctx.lineCap = 'round';
         this.ctx.beginPath();
         this.ctx.moveTo(this.size / 2,0);
         this.ctx.lineTo(0,0 - this.size / 2);
