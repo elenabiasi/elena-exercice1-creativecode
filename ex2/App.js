@@ -48,10 +48,7 @@ function animate() {
 
     //slideDown += 2;
   }
-  if (angle == 360){
-  cpt++
-
-  }
+  // 
   
   if (angle >= 360) 
    {
