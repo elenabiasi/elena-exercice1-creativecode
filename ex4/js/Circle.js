@@ -25,8 +25,6 @@ class Circle {
     this.targetHue = this.hue;
     this.originRadius = radius;
     this.targetRadius = radius;
-
-
   }
 
   draw() {
@@ -44,20 +42,20 @@ class Circle {
 
 //bouche
 this.ctx.beginPath();
-this.ctx.arc(0, 30+cpt, 3+cpt/2, 0, 2 * Math.PI);
+this.ctx.arc(0, 30+cpt, 5, 0, 2 * Math.PI);
 this.ctx.fill();
 this.ctx.closePath();
 
 //oreilles
 this.ctx.beginPath();
-this.ctx.arc(100+cpt, -30, this.radius/2+cpt/2, 0, 2 * Math.PI);
+this.ctx.arc(105+cpt, 0, this.radius/2+cpt/2, 0, 2 * Math.PI);
 this.ctx.fillStyle = `hsl(${this.hue},50%,50%)`;
 this.ctx.fill();
 this.ctx.rotate(angle * Math.PI / 180);
 this.ctx.closePath();
 
 this.ctx.beginPath();
-this.ctx.arc(-30, 100+cpt, this.radius/2+cpt/2, 0, 2 * Math.PI);
+this.ctx.arc(0, 105+cpt, this.radius/2+cpt/2, 0, 2 * Math.PI);
 this.ctx.fill();
 this.ctx.rotate(angle * Math.PI / 180);
 this.ctx.closePath();
@@ -65,14 +63,14 @@ this.ctx.closePath();
 
 //yeux
 this.ctx.beginPath();
-this.ctx.arc(20+cpt, 0, this.radius/6+cpt, 0, 2 * Math.PI);
+this.ctx.arc(20+cpt, 0, this.radius/8+cpt, 0, 2 * Math.PI);
 this.ctx.fillStyle = "black";
 this.ctx.fill();
 this.ctx.rotate(angle * Math.PI / 180);
 this.ctx.closePath();
 
 this.ctx.beginPath();
-this.ctx.arc(0, 40+cpt, this.radius/6+cpt, 0, 2 * Math.PI);
+this.ctx.arc(0, 40+cpt, this.radius/8+cpt, 0, 2 * Math.PI);
 this.ctx.fill();
 this.ctx.rotate(angle * Math.PI / 180);
 this.ctx.closePath();
@@ -95,7 +93,8 @@ this.ctx.closePath();
 
 //corps
 this.ctx.beginPath();
-this.ctx.strokeStyle= `hsl(${this.hue},50%,50%)`;this.ctx.lineWidth = 20;
+this.ctx.strokeStyle= `hsl(${this.hue},50%,50%)`;
+this.ctx.lineWidth = 20;
 this.ctx.arc(0, 0, 100+cpt, 0, 2 * Math.PI);
 this.ctx.stroke();
 this.ctx.closePath();

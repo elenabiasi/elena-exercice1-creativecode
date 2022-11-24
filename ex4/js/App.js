@@ -37,7 +37,6 @@ class App {
     this.circle.resetAndGo(
       e.clientX * this.pixelRatio,
       e.clientY * this.pixelRatio
-
     );
   }
 }
