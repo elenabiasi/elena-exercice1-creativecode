@@ -3,7 +3,6 @@
  *  https://easings.net/#
  */
 
-let cpt = 0;
 
 class App {
   constructor() {
@@ -20,10 +19,12 @@ class App {
 
 
   setup() {
-    this.circle = new Circle(100, 100, 80, this.ctx, cpt);
+    
+    this.circle = new Circle(100, 100, 80, this.ctx);
 
     document.addEventListener("click", this.click.bind(this));
     this.draw();
+    
   }
 
   draw() {
@@ -33,7 +34,6 @@ class App {
   }
 
   click(e) {
-    cpt +=5;
     this.circle.resetAndGo(
       e.clientX * this.pixelRatio,
       e.clientY * this.pixelRatio
