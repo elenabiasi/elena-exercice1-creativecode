@@ -7,6 +7,7 @@ class Eye {
     }
   
     draw(x, y) {
+
       this.ctx.save();
       this.ctx.translate(this.x, this.y);
       this.ctx.fillStyle = "white";
