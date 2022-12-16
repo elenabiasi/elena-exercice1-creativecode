@@ -19,7 +19,7 @@ class Circle {
   initParticleStock() {
     this.pool = [];
     this.particles = [];
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 5; i++) {
       this.pool.push(new Particle(this.x, this.y, this.ctx));
     }
   }
