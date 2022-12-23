@@ -93,17 +93,8 @@ document.body.onmouseup = function() {
   --this.mouseDown;
 }  
 
-
-
-
     this.draw();
   }
-
-
-
-
-
-
 
   pushPixels() {
     //distance entre la sourise et tous les éléments de la grille
@@ -189,6 +180,8 @@ document.body.onmouseup = function() {
         });
       }
     }
+
+
 
     // this.draw();
   }
