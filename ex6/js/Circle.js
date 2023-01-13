@@ -25,10 +25,8 @@ class Circle {
     this.ctx.closePath();
     this.ctx.restore();
 
-      this.y += luminance *10
+    this.y += luminance *10
     
-
-
   }
 
 
